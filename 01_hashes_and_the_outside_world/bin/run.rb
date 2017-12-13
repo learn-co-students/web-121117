@@ -4,4 +4,4 @@ require_relative "../lib/api_communicator.rb"
 require_relative "../lib/command_line_interface.rb"
 
 welcome
-books = get_books_from_api
+books = get_books_from_api(get_genre)
