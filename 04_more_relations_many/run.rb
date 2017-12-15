@@ -26,7 +26,17 @@ Enrollment.new(nemanja, c3)
 
 
 
+# User
+# @people_i_follow = [u2, u3, u4]
+# Follow
+# @user_following
+# @user_followed
+# Follow(u1, u2)
+# Follow(u2, u1)
+# Follow(u1, u3)
+# Follow(u1, u4)
 
+#delete u4
 
 
 binding.pry
