@@ -1,0 +1,12 @@
+require_relative 'config/environment'
+require 'sinatra/activerecord/rake'
+
+desc 'starts a console'
+task :console do
+  Pry.start
+end
+
+desc 'tells me i\'m awesome'
+task :amicool do
+  puts "Rishi you're the best and I love you."
+end
