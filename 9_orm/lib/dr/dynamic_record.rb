@@ -1,18 +1,11 @@
 class DynamicRecord
 
-
-
-
-
-
   def self.set_attributes
     self.column_names.each do |col|
       attr_accessor(col.to_sym)
       # attr_accessor :content
     end
   end
-
-
 
   def self.table_name
     "#{self.to_s.downcase}s"
