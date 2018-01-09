@@ -6,7 +6,7 @@ class SongsController < ApplicationController
   get "/songs" do
     # Get all songs
     # Show some view
-    @songs = ["All I want for Christmas", "Party in the USA", "Jingle Bells"]
+    @songs = Song.all
     erb :"songs/index"
   end
 
@@ -21,7 +21,7 @@ class SongsController < ApplicationController
 
 
   patch "/songs/:id" do
-    
+
   end
 
   # GET /songs/:id
