@@ -1,40 +1,34 @@
 class SongsController < ApplicationController
-
-  # GET /songs
-  # Index Action
-
   get "/songs" do
-    # Get all songs
-    # Show some view
     @songs = Song.all
     erb :"songs/index"
   end
 
-  # NEW
   get "/songs/new" do
     erb :"songs/new"
   end
 
-  get "/songs/:id/edit" do
-
+  post "/songs" do
+    song = Song.create(name: params[:name], rating: params[:rating])
+    redirect "/songs/#{song.id}"
   end
-
 
   patch "/songs/:id" do
-
+    @song = Song.find(params[:id])
+    @song.update(name: params[:name], rating: params[:rating])
+    redirect "/songs/#{@song.id}"
   end
 
-  # GET /songs/:id
   get "/songs/:id" do
-    @song = "All I want for Christmas"
+    @song = Song.find(params[:id])
     erb :"songs/show"
   end
 
-
-
-  post "/songs" do
-    binding.pry
+  get "/songs/:id/edit" do
+    @song = Song.find(params[:id])
+    erb :"songs/edit"
   end
+
 
 
 
