@@ -1,0 +1,11 @@
+<form action="/genres" method="post">
+  <input type="text" name="name" placeholder="Name" />
+  <div>
+    <% @books.each do |b| %>
+    <input type="checkbox" id="<%= b.id %>" name="book_ids[]" value="<%= b.id %>" />
+    <label for="<%= b.id %>"><%= b.title %></label>
+    <br />
+    <% end %>
+  </div>
+  <input type="submit" value="submit" />
+</form>
