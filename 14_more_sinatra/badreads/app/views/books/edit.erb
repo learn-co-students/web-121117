@@ -1,0 +1,17 @@
+<form action="/books/<%= @book.id %>" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  <input type="text" name="title" placeholder="Title" value="<%= @book.title %>"" />
+  <div>
+    <% @authors.each do |a| %>
+    <input type="radio" id="<%= a.id %>" name="author_id" value="<%= a.id %>"
+      <% if @book.author_id == a.id %>checked<% end %> />
+    <label for="<%= a.id %>"><%= a.name %></label>
+    <% end %>
+  </div>
+  <input type="submit" value="submit" />
+</form>
+
+<form action="/books/<%= @book.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="delete" />
+</form>
