@@ -30,7 +30,6 @@ class GenresController < ApplicationController
   patch "/genres/:id" do
     @genre = Genre.find_by_id(params[:id])
     @genre.update(name: params[:name])
-    binding.pry
     @genre.book_ids = params[:book_ids]
 
     redirect "/genres/#{@genre.id}"
