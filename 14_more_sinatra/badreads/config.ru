@@ -8,4 +8,5 @@ use Rack::MethodOverride
 
 use BooksController
 use AuthorsController
+use GenresController
 run ApplicationController
