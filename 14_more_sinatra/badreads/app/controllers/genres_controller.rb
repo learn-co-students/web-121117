@@ -8,7 +8,6 @@ class GenresController < ApplicationController
   post "/genres" do
     @genre = Genre.create(name: params[:name])
     @genre.book_ids = params[:book_ids]
-    binding.pry
     redirect "/genres/#{@genre.id}"
   end
 
