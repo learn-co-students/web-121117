@@ -1,1 +1,15 @@
-<p><%= @song.name %> | <%= @song.rating %></p>
+<p><%= @song.name %> </p>
+
+
+
+<% if @song.artist %>
+  <a href="/artists/<%=@song.artist.id %>"><%= @song.artist.name %></a>
+<% end %>
+
+
+<a href="/songs/<%= @song.id %>/edit">Edit</a>
+
+<form action="/songs/<%= @song.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete"/>
+</form>

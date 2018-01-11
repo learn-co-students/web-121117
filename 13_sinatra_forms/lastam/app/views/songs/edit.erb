@@ -1,6 +1,5 @@
 <form action="/songs/<%= @song.id %>" method="post">
+  <input type="text" name="song[name]" placeholder="Name" value="<%= @song.name %>"/>
+  <input type="submit" value="Update Song"/>
   <input type="hidden" name="_method" value="PATCH">
-  <input type="text" name="name" value="<%= @song.name %>" />
-  <input type="number" name="rating" value="<%= @song.rating %>" />
-  <input type="submit" value="Edit Song"/>
-</form
+</form>

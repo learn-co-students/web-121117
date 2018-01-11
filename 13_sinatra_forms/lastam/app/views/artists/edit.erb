@@ -1,0 +1,6 @@
+<form action="/artists/<%= @artist.id %>" method="post">
+  <input type="text" name="artist[name]" placeholder="Name" value="<%= @artist.name %>"/>
+  <input type="text" name="artist[hometown]" placeholder="Hometown" value="<%= @artist.hometown %>" />
+  <input type="submit" value="Update Artist"/>
+  <input type="hidden" name="_method" value="PATCH">
+</form>

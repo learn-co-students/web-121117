@@ -1,6 +1,7 @@
-<h1>Showing all the songs</h1>
+<p>Songs</p>
 <ul>
   <% @songs.each do |song| %>
-    <li><%= song.name %>| <%= song.rating %></li>
+    <li><a href="/songs/<%= song.id %>"><%= song.name %></a></li>
   <% end %>
+
 </ul>
