@@ -1,0 +1,9 @@
+<%= form_for @pastry do |f| %>
+  <%= f.label "Name: " %>
+  <%= f.text_field :name %>
+  <%= f.label "Type: " %>
+  <%= f.text_field :pastry_type %>
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Delete Pastry", pastry_path(@pastry), method: :delete %>
