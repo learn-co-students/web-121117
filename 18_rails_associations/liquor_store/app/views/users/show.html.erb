@@ -1,0 +1,7 @@
+<h1><%= @user.name %>'s Drinks</h1>
+
+<ul>
+  <% @user.drinks.each do |d| %>
+    <li><%= link_to d.name, d %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,13 @@
+<%= form_for @drink do |f| %>
+  <%= f.label :name, "Drink Name: " %>
+  <%= f.text_field :name %>
+
+  <br />
+
+  <%= f.label :user_id, "User" %>
+  <%= f.select :user_id, @user_options  %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Delete", @drink, method: :delete %>

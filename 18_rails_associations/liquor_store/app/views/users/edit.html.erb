@@ -1,0 +1,7 @@
+<%= form_for @user do |f| %>
+  <%= f.label "Name: " %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Delete", @user, method: :delete %>

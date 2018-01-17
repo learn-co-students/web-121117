@@ -1,0 +1,5 @@
+<ul>
+  <% @drinks.each do |d| %>
+    <li><%= link_to d.name, d %> | <%= link_to d.user.name, d.user %></li>
+  <% end %>
+</ul>
