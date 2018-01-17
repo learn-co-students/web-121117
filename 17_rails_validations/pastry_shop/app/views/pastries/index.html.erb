@@ -1,0 +1,5 @@
+<ul>
+  <% @pastries.each do |p| %>
+    <li><%= link_to p.name, p %> | <%= p.pastry_type %> | <%= p.rating %></li>
+  <% end %>
+</ul>
