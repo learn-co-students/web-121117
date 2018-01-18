@@ -41,7 +41,7 @@ class DrinksController < ApplicationController
   end
 
   def set_user_options
-    @user_options = User.all.map { |u| [u.name, u.id ] }
+    @users = User.all
   end
 
   def find_drink_by_id

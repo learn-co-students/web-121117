@@ -1,0 +1,12 @@
+<%= render "errors/error_messages" %>
+
+<%= form_for @game do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+
+  <%= f.collection_check_boxes :player_ids, @players, :id, :name %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Delete Game", @game, method: :delete %>
