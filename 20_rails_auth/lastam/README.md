@@ -1,3 +1,10 @@
 # README
-- Bcrypt
-- How to create a new User with password
+
+
+# Big questions to answer??
+
+- What is the difference between signin and signup
+- What is Authentication
+- What is the difference between Authorization and Authentication
+- How do passwords work  
+- What is the difference between hashing and encrypting 

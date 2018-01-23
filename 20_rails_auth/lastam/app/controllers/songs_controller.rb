@@ -1,6 +1,19 @@
 class SongsController < ApplicationController
   def index
-    @songs = Song.all
+
+
+
+    # I can look in sessions
+    # I can find my user_id
+    # I can find my user using user_id
+    # I can then find my songs using my user
+    # and then show songs
+
+    if logged_in?
+      @songs = current_user.songs
+    else
+      @songs = Song.all
+    end
   end
 
   def show
