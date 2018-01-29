@@ -4,6 +4,7 @@
   - Technically called Mocha at the time then LiveScript (ewww)
   - Microsoft copied it and called theirs Jscript (less eww)
   - Named JavaScript as a means of using some of the popularity of Java
+
 * Stayed almost dormant for 10 years (1999 - 2009)
 * Popularity for the language grows from 2006
   * Google Maps - 2005*
