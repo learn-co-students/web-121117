@@ -1,0 +1,17 @@
+# Object Oriented JavaScript
+- Objects
+  - Keys and Values
+  - Keys are strings
+  - Values can be any data type in JS
+- Constructor Function
+  - Parameters into the method can be attributes to the object
+  - Creating new objects with `new`
+  - Adding Methods onto our objects
+- Prototypes
+  - Attaching methods for every instance
+  - `Dog.prototype.bark`
+- ES6 Class Syntax
+  - `Class`
+  - `constructor()`
+  - Instance methods
+  - `static` and class methods
