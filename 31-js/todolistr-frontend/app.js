@@ -1,8 +1,8 @@
 const App = (function() {
   return class App {
     static init() {
-      this.renderTodos();
       console.log("Running app");
+      this.renderTodos();
       let form = document.getElementById("todo-form");
       form.addEventListener("submit", this.handleSubmit);
 
@@ -23,9 +23,13 @@ const App = (function() {
       /// create todo objs
       /// append todo objs to screen
 
-      console.log(TodoApi.fetchTodos());
+
       TodoApi.fetchTodos().then(todos => {
-        console.log(todos);
+        todos.forEach(function(todoJSON){
+          let todo = new Todo(todoJSON)
+
+          todoContainer.append(todo.render())
+        })
       });
       //
     }
@@ -35,8 +39,12 @@ const App = (function() {
       let formInput = document.getElementById("todo-input");
       console.log(formInput.value);
 
+      // YOUR TODO
+      // Fetch request and THEN upon receiving a response
+      // render the todo on the page
+
       let todoContainer = document.getElementById("todo-list");
-      let todo = new Todo(formInput.value);
+      let todo = new Todo({ content: formInput.value});
       todoContainer.append(todo.render());
 
       // when we submit our form

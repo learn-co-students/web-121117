@@ -1,7 +1,6 @@
 const Todo = (function() {
   return class Todo {
-    constructor({ content, id }) {
-      console.log(id);
+    constructor({ content }) {
       this.content = content;
     }
 
