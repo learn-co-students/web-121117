@@ -4,53 +4,49 @@
    - Ties together all of the files into one place
 */
 
-const App = (function(){
+const App = (function() {
   return class App {
-
     // The Magic Function that we will run
     static init() {
-
       // Adds our jokes from our app onto the view
-      App.renderAllJokes()
+      App.renderAllJokes();
 
       // Adding our eventListeners
-      let jokeForm = document.getElementById('joke-form')
-      jokeForm.addEventListener('submit', App.handleJokeSubmit)
+      let jokeForm = document.getElementById("joke-form");
+      jokeForm.addEventListener("submit", App.handleJokeSubmit);
     }
 
-    static renderAllJokes(){
-      JokeAdapter.getJokes()
-      .then(json => {
-        let jokes = json.map(function(json) { return new Joke(json) })
-
-        let jokeList = document.getElementById('joke-list')
-
-        jokes.forEach(function(joke){
-          jokeList.append(joke.render())
-        })
-      })
+    static renderAllJokes() {
+      JokeAdapter.getJokes().then(json => {
+        let jokes = json.map(function(json) {
+          return new Joke(json);
+        });
+        let jokeList = document.getElementById("joke-list");
+        jokes.forEach(function(joke) {
+          jokeList.append(joke.render());
+        });
+      });
     }
 
-    static handleJokeSubmit(event){
-      event.preventDefault()
+    static handleJokeSubmit(event) {
+      event.preventDefault();
 
-      let jokeInput = document.getElementById('joke-body').value
+      let jokeInput = document.getElementById("joke-body").value;
 
-      JokeAdapter.createJoke(jokeInput)
-      .then(json => {
-        let jokeList = document.getElementById('joke-list')
+      JokeAdapter.createJoke(jokeInput).then(json => {
+        let jokeList = document.getElementById("joke-list");
 
-        let jokeContainer = document.createElement('li')
-        let jokeShare = document.createElement('a')
-        jokeShare.innerText = "x"
-        jokeShare.href = "http://localhost:3000/joke/" + json["id"]
-        let jokeBody = document.createTextNode(jokeInput + " ")
+        let jokeContainer = document.createElement("li");
+        let jokeShare = document.createElement("a");
+        jokeShare.innerText = "x";
+        jokeShare.href = "http://localhost:3000/joke/" + json["id"];
+        let jokeBody = document.createTextNode(jokeInput + " ");
 
-        jokeContainer.append(jokeBody)
-        jokeContainer.append(jokeShare)
+        jokeContainer.append(jokeBody);
+        jokeContainer.append(jokeShare);
 
-        jokeList.append(jokeContainer)
-      })
+        jokeList.append(jokeContainer);
+      });
     }
-  }
-})()
+  };
+})();
