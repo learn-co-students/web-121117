@@ -37,18 +37,16 @@ const App = (function() {
     static handleSubmit(event) {
       event.preventDefault();
       let formInput = document.getElementById("todo-input");
-      console.log(formInput.value);
 
       // YOUR TODO
       // Fetch request and THEN upon receiving a response
       // render the todo on the page
-
-      let todoContainer = document.getElementById("todo-list");
-      let todo = new Todo({ content: formInput.value});
-      todoContainer.append(todo.render());
-
-      // when we submit our form
-      // a new todo should appear
+      TodoApi.createTodo(formInput.value)
+      .then(json => {
+          let todoContainer = document.getElementById("todo-list");
+          let todo = new Todo(json);
+          todoContainer.append(todo.render());
+      })
     }
   };
 })();
