@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './Navbar';
 
 
 const myCreateElement = (type, children, props = {}) => {
   return {
     $$typeof: Symbol.for('react.element'),
     type: type ,
-    props: { children: children },
+    props: {
+      children: children,
+      content: props.content,
+      subheader: props.subheader
+    },
     ref: null
   }
 }
@@ -18,7 +23,6 @@ const Article = (name, text) => {
   ])
 }
 
-ReactDOM.render(myCreateElement('div', [
-  Article("Hi", "Bye"),
-  Article("Hello", "Goodbye")
-]), document.getElementById('main'));
+
+
+ReactDOM.render(Navbar({content: 'New Page', subheader: "Websites are easy now"}), document.getElementById('main'));
