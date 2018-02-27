@@ -1,5 +1,5 @@
 # Prince's Reference Sheet
-Here's some written up reference of what the lecture covered.
+Here's some written up reference of what the lecture covered. Inspired by Rishi's amazing work!
 
 ### Manipulating the Browser's URL
 We can forcibly push our Browser's URL to a different route.
