@@ -9,7 +9,7 @@
 */
 
 const JokeAdapter = (function(){
-  const BASE_URL = "http://localhost:3000/jokes/"
+  const BASE_URL = "http://febe4b4d.ngrok.io/jokes/"
   return class JokeAdapter {
     static getJokes(){
       return fetch(BASE_URL)
