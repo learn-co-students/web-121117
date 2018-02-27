@@ -40,6 +40,7 @@ class App extends Component {
           <Route path="/404" component={catchAll} />
           <Redirect from="/main" to="/" />
           <Route exact path="/" component={Main} />
+          <Redirect to="/404" />
         </Switch>
       </div>
     );
