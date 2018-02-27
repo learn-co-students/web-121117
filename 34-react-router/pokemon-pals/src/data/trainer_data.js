@@ -1,0 +1,14 @@
+export default [
+  {"id":13,"name":"Natalie","pokemon":[]},
+  {"id":14,"name":"Maxwell","pokemon":[{"id":81,"nickname":"Horacio","species":"Nidoran"},{"id":82,"nickname":"Adrianna","species":"Gengar"},{"id":83,"nickname":"Alf","species":"Lickitung"}]},
+  {"id":15,"name":"Rishi","pokemon":[{"id":85,"nickname":"Nyah","species":"Gastly"},{"id":87,"nickname":"Ron","species":"Jigglypuff"},{"id":88,"nickname":"Caleigh","species":"Parasect"},{"id":89,"nickname":"Callie","species":"Golbat"}]},
+  {"id":16,"name":"Tim","pokemon":[{"id":93,"nickname":"Derek","species":"Muk"},{"id":94,"nickname":"Norma","species":"Cubone"},{"id":95,"nickname":"Dorris","species":"Rhydon"}]},
+  {"id":17,"name":"Johann","pokemon":[{"id":99,"nickname":"Serenity","species":"Rattata"},{"id":100,"nickname":"Aileen","species":"Arbok"},{"id":101,"nickname":"Wilbert","species":"Krabby"},{"id":102,"nickname":"Samson","species":"Wigglytuff"}]},
+  {"id":18,"name":"Meryl","pokemon":[{"id":108,"nickname":"Kayli","species":"Rapidash"}]},
+  {"id":19,"name":"Steven","pokemon":[{"id":109,"nickname":"Tamia","species":"Onix"},{"id":110,"nickname":"Tia","species":"Nidoran"},{"id":111,"nickname":"Lazaro","species":"Charizard"},{"id":112,"nickname":"Dayton","species":"Weedle"},{"id":113,"nickname":"Rory","species":"Zapdos"},{"id":114,"nickname":"Tillman","species":"Dewgong"}]},
+  {"id":20,"name":"Ashlee","pokemon":[{"id":115,"nickname":"Kaylah","species":"Lickitung"},{"id":116,"nickname":"Rosie","species":"Gastly"},{"id":117,"nickname":"Salvador","species":"Beedrill"},{"id":118,"nickname":"Francesca","species":"Beedrill"},{"id":120,"nickname":"Katharina","species":"Abra"}]},
+  {"id":21,"name":"Laura","pokemon":[{"id":121,"nickname":"Adolfo","species":"Wartortle"},{"id":122,"nickname":"Alicia","species":"Nidoran"},{"id":123,"nickname":"Wade","species":"Dratini"},{"id":124,"nickname":"Elton","species":"Weedle"},{"id":125,"nickname":"Euna","species":"Golduck"},{"id":126,"nickname":"Casimir","species":"Slowpoke"}]},
+  {"id":22,"name":"Matt","pokemon":[{"id":129,"nickname":"Vicenta","species":"Victreebel"},{"id":130,"nickname":"Garry","species":"Voltorb"},{"id":131,"nickname":"Leanna","species":"Dragonite"}]},
+  {"id":23,"name":"Alex","pokemon":[{"id":133,"nickname":"Christophe","species":"Starmie"},{"id":134,"nickname":"Noemy","species":"Vulpix"},{"id":135,"nickname":"Lessie","species":"Snorlax"},{"id":136,"nickname":"Alford","species":"Cubone"},{"id":137,"nickname":"Waino","species":"Gyarados"},{"id":138,"nickname":"Justus","species":"Magnemite"}]},
+  {"id":24,"name":"Prince","pokemon":[{"id":139,"nickname":"Bartholome","species":"Jynx"},{"id":140,"nickname":"Ahmad","species":"Scyther"},{"id":141,"nickname":"Aubree","species":"Mew"},{"id":142,"nickname":"Pamela","species":"Fearow"},{"id":143,"nickname":"Salma","species":"Sandslash"},{"id":144,"nickname":"Brock","species":"Tauros"}]}
+]
